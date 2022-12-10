@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is Heading</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum commodi soluta explicabo obcaecati suscipit dolor impedit! Ea illo, aliquam tempore eaque doloremque facilis magni ad ipsum blanditiis, nostrum fugiat recusandae!
+    </p>
+    <button>hey click me </button>
+    <script>
+        // Your javaScript code goes here 
+        // internal javascript
+        console.log("Hello this is my js code ")
+
+        let message="Hello How r u";
+        // window.alert(message);
+        // alert(message);
+         // let name=  prompt("enter your name"); //take input and return also in a box
+         //alert ("Hello "+name);
+        let choice= confirm("Do you want to got to google");
+        if(choice==true)
+        {
+            location.href="https://www.google.com"
+        }
+        else
+        {
+            alert("Not nagivating to google");
+        }
+        //console object
+        //log,info,error,warn,table,time,clear and many more 
+        console.log("hey this is log ");
+        console.warn("hey this is warning ");
+        console.info("trying");
+        console.error("Hey this  is an error");
+        /*  setTimeout(function()
+        { //call
+            console.log("clearing..")
+            console.clear();
+        },3000)
+         //  console.clear(); */
+         //table
+        let student = {
+            name : 'Bhupendra',
+            address : "Lucknow",
+            phone: "6387648857"
+        };
+        console.log(student);
+        console.table(student);
+    </script>
+    
+</body>
+</html>

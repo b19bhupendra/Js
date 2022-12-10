@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Arrays in JavaScript</h1>
+    <h2>Points to remember in JavaScript Arrays</h2>
+    <ol>
+        <li> Type of Arrays in JavaScript is not fixed elements can be of anytype in an Arrays
+            for example - let arr =[01,'Bhupendra',89.9]</li>
+        <li> Size of an Array is also not fixed ,
+            We can add elements in run time also </li>
+    </ol>
+    <script>
+        //1. Creating array
+        let arr =[12,33,4,5,56,66];
+        console.log(arr);
+        console.log(typeof arr);
+        //2. accessing elements in an arrays
+        console.log(arr[5]);
+        //3. creating elemnts using constructor
+        let arr2= new Array("bhupendra",23,"abc",33.4);//as type is not fixed
+        console.log(arr2);
+        console.log(arr2[3]);
+        console.log(arr2.length); // finding size of arrays
+        arr2.push("HEllo");
+        console.log("Array after pushing hello "+ arr2);
+
+        
+    </script>
+</body>
+</html>

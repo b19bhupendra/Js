@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "..\\Project"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Js",
+		"editor.wordWrap": "on"
+	}
+}

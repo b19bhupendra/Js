@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversion</title>
+</head>
+<body>
+    <h1>Type conversion in JavaScrip</h1>
+    <dl><h2>There are two types of Type conversions</h2>
+        <ol>
+        <dt> <li>Automatic (Implicit)</li></dt>
+        <li><dt>Manual (Explicit)</dt></li>
+        </ol>
+    </dl>
+    <h3>These are some Important Examples Type Conversions</h3>
+    <ol>
+        <li>String Conversion</li>
+        <li>Numeric Conversion</li>
+        <li>Boolean Conversion</li>
+    </ol>
+    <script>
+        //type converstion examples
+        //1. -> Stirng conversion 
+        let a=12;
+        console.log(typeof(a));
+        // to convert this number datatype in string
+        let as=String(a); // this will convert it into string form
+        console.log(as) // value
+        console.log(typeof(as));// Type of value 
+        console.log(as.length);// we cannot find length in number type but we can find in string type
+        //we can also use toString function
+        console.log(a.toString());
+
+        // numeric conversion
+        let value = "123";
+        console.log("adding 5 in string " +value+5);
+        console.log(typeof(value));
+        let value1=Number(value);// this will conver string to number 
+        console.log("Converting to number from string "+value1);
+        console.log(typeof(value1)); // now we can perform mathmetical operatons
+        let sum = value1 +5;
+        console.log(sum); 
+
+        let f2="123.34";
+        console.log(f2);
+        let f3=Number(f2);
+        console.log(typeof(f3));
+
+
+        //Boolean 
+        let ex="false"; 
+        console.log(ex +" "+typeof(ex))
+        let nx=Boolean(ex);
+        console.log(nx+" "+typeof(nx)); // if string is of more then one character then it will give true
+
+    </script>
+    
+</body>
+</html>

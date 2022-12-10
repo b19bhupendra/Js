@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String_Operations</title>
+</head>
+<body>
+    <h1>Five Important String Operations </h1>
+    <script>
+    //1.- how to check equality of two string
+    //==,===
+    // these String are created with the help of literal
+    let str1="Javascript"; //is string me == content ko check krega
+    let str2="Javascript";
+    console.log(str1);
+    console.log(str1==str2);
+    if (str1==str2)
+    {
+        console.log("Both strings are equal");
+    }        
+    //ex-- Creating string  in another way
+    let str3= new String("JavaScript");// is string me == referance address ko check krta h
+    let str4 = new String("javascript");
+    console.log(str3);
+    console.log(str4);
+    console.log(str3==str4);
+
+    //2.- comparing the two strings
+    let s1="A";
+    let s2="B";
+    //to compare two string we use .localCompare
+    let result = s1.localeCompare(s2);
+    //exact matching : 0
+    //s1<s2 : -1
+    //65<66 
+    //s1>s2 : +1
+    //compares the ASCII value
+    console.log(s2.charCodeAt(0));//it willl give ASCII code
+   
+    //3.- Replace certain words with  another
+    let oldString="Hello Java and JavaScript";
+    let newString= oldString.replace("Java","HTML"); //replacing old string withe help of replace function
+    console.log("Replaced String --> "+newString);
+    //Replace function purani string me change nahi krta ye new String bana deta h change kr k
+    //if the word coming again and again it will replace only the first occurance word 
+    console.log("Old String --> "+oldString);
+     
+    //4. -Accessing character  - String[0]
+    //charAt(index)
+    console.log(oldString.charAt(6));// isme charAt() funtion ko agr character ni milla to ye blank string return krega 
+    //Another way
+    console.log(oldString[7]);// isme agr issee charcater nahi milla to ye undefined return krrega , its not an array its an string it looks like array
+
+
+    //5. converting string to arrays
+    // we use split function
+    let arr=  oldString.split(" ");
+    console.log(arr);
+
+    let char= oldString.split(""); // this will give all the cahracters in arrays
+    console.log(char);
+
+
+
+   </script>
+</body>
+</html>

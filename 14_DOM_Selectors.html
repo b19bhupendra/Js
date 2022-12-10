@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <!-- javascript-->
+    <script>
+        console.log("HEAD SECTION");
+
+    </script>
+</head>
+<body>
+    <h1>DOM Selectors</h1>
+    <h2 id="Selector">Platform and language independent model to represent the HTML or XML document</h2>
+
+    <h3 class="myClass">In the DOM , all parts of the document, such as elements, attributes, text,etc
+        are organized in a hierarchical tree like structure.</h3>
+    <h3 class="myClass">We can access it by document.title </h3>
+    <h3 class="myClass">and this document.title means that we have used the title property from the document</h3>
+    <!--Javascript-->
+
+    <script>
+       console.log("Inside body");
+       let ele=document.documentElement;
+       console.log(ele);
+       let ht = document.head;
+       console.log(ht);
+
+       let ti =document.title;
+       console.log(ti);
+       
+       let bt= document.body;
+       console.log(bt);  
+
+       //Selecting element by using id 
+       // getElementById()- return single
+
+       let h2=document.getElementById("Selector");
+       console.log(h2);
+        h2.innerHTML="changed text --> It defines the logical structure of the documents and the way in which they can be accessed and manipulated by an application program";
+        h2.style.color="lightblue";
+        h2.style.backgroundColor="gray";
+
+        //Selecting elements using class name
+        // getElementsByClassName(classname)
+        let h3=document.getElementsByClassName("myClass");
+        console.log(h3);
+        console.log(typeof h3); // this will give object
+        
+        // accessing  each class element by loop
+        for(let element of h3)
+        {
+           // console.log(element);
+            element.style.color="Royalblue";
+            element.style.backgroundColor="lightgray";
+        }
+
+
+        //Selecting element with the help of css Selector
+        // querySelector- return single first element 
+        //querySelectorAll - returns list of elements
+        let els = document.querySelector(".myClass");
+        console.log(els);
+
+        let els2=document.querySelectorAll(".myClass");
+        console.log(els2);
+
+        for(let e of els2)
+        {
+            console.log(e);
+            e.style.color="Lightblue";
+        }
+
+
+</script>
+</body>
+</html> 

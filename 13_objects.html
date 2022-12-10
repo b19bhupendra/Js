@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Objects in javaScript</h1>
+    <ol>
+        <li>JavaScript is an object bnased language</li>
+        <li>A JavaScript object is just a collection of key value pairs</li>
+        <li>key:value</li>
+        <li> we can take multiple key value</li>
+        <li>{key1:vaue1,key2:value2,key3:value3}</li>
+    </ol>
+    <ol>
+        <h2>Creating object</h2>
+        <li>{ property }</li>
+        <li> {
+            name:"bhupendra",
+            Add:"LKO",
+            Phn"12 };
+        </li>
+        <li>object can have function inside</li>
+        <li> {
+            name:"bhupendra",<br>
+            Add:"LKO",<br>
+            Phn: 123,<br>
+            display:function <br>{
+                <br> console.log(this.name);
+                <br> }<br>
+         };
+        </li>
+    </ol>
+    <h2>Accessing the Properties of object</h2>
+    <ol>
+        Two ways to access are -
+        <li>object.key</li>
+        <li>object["key"]</li>
+    </ol>
+    <script>
+        //creating object
+        let obj = {
+            name:"bhupendra",
+            age:22,
+            add:"LKO",
+            phn:938,
+            display:function() // creating function inside object
+            {
+                console.log("inside function");
+                console.log(this.name);
+                console.log(this.age);
+                console.log(this.add);
+            }
+        };
+        console.log(obj);
+        console.log(typeof obj);
+
+        // accessing properties of  obj
+        console.log(obj.name);
+        console.log(obj["age"]);
+
+        obj.display(); // functin calling 
+      
+
+        //using for loop  to get keys of object
+        for(let key in obj)
+        {
+            console.log("Key and value in the object "+key+" "+obj[key]);
+        }
+
+        // changing values of the property
+        obj.name="Yadav_bhupendra";
+        console.log(obj.name);
+
+        //dynamic adding property
+        obj['email']= "bhupendrayadav2732@gamil.com";
+        console.log(obj);
+
+        //deleating propert
+        delete obj.add;
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_Styling</title>
+    <style>
+        .red
+        {
+            background-color: aqua;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="changeStyle()">changeStyle</button>
+    <button onclick="getStyle()">getStyle</button>
+    <h1 id="main">DOM Styling</h1>
+    <h2 id="sub">Styling with the help of JavaScript</h2>
+    <h2 id="subsub">We Start from here </h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi perspiciatis doloribus dolore dolores temporibus, aspernatur itaque eaque ipsum commodi hic! Doloribus nisi voluptas dolores vero officiis nemo sit accusamus quas!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nam? Reprehenderit cum distinctio eaque provident dolorem aliquid modi cumque soluta porro atque, nobis eveniet, eius sequi odio quam vitae dignissimos accusantium laboriosam ea iure? Magni consectetur, corporis voluptatibus dolorum amet id necessitatibus iure exercitationem quod repellat sapiente, iste cupiditate tempora! Ad quo necessitatibus neque consequuntur mollitia, officia cupiditate rem harum at itaque dolore nulla alias iusto inventore ea temporibus dolor officiis sint id, explicabo dolores fuga, hic autem. Neque quia libero odio sequi fugit cumque culpa minus nihil eveniet iusto obcaecati quidem perspiciatis odit, vero consequuntur nostrum nesciunt officia accusantium. Quia, adipisci ex ipsum minus, praesentium quae assumenda sunt voluptatem, cum natus reiciendis temporibus dolorum mollitia porro ab. Unde quisquam recusandae nemo, ipsa ipsam et nisi quibusdam dolores pariatur vel consectetur quo? Tempora perferendis rem repellendus esse neque facilis deleniti ducimus odit adipisci culpa veniam reprehenderit ipsa tenetur animi praesentium dolorum deserunt aliquid nam provident, alias ad recusandae tempore. Perspiciatis aspernatur unde facere temporibus saepe alias quas ab. Sint fugit porro consectetur quae ipsa vitae, distinctio corporis repudiandae obcaecati modi repellat et libero delectus in ut iure? Quaerat doloribus autem modi dolores laudantium quidem? Esse incidunt architecto corrupti totam reprehenderit excepturi commodi neque culpa modi accusamus explicabo, possimus inventore tempore expedita animi atque assumenda! Neque deserunt ipsam quis totam eius veniam. Ipsam nostrum deleniti atque consectetur laudantium in qui quae ipsum ad tenetur fugiat eligendi et, adipisci unde, assumenda iste minus quidem repudiandae facilis earum. Architecto suscipit ullam officia qui. Molestiae quaerat harum nobis ad repellat placeat laboriosam, officiis aspernatur cumque deserunt dicta obcaecati, numquam cum facere atque accusantium magni amet ipsa necessitatibus quae quis error nam! Impedit tenetur nulla error praesentium nostrum consectetur officia. Rerum nemo quaerat amet quos modi veritatis a saepe, earum voluptas mollitia doloribus harum eius consequatur eos assumenda porro voluptatibus blanditiis cum vel animi, dignissimos iure! Officiis quaerat cumque culpa officia ipsum, ullam iste eligendi vitae facilis optio tenetur rerum maiores odit eaque a nisi qui dicta doloribus? Dicta, pariatur laboriosam fugit est repellendus nesciunt sit beatae soluta doloribus, nobis eos id dolore! Sequi, perferendis est vel nam voluptates praesentium deserunt corporis voluptatem, aliquid, corrupti dicta illo. Quas quos ipsum rem placeat sunt esse quae omnis odio quibusdam repellendus id eveniet sint est, aperiam ea tempora? Ullam aliquam eligendi sit quas id est ratione culpa dolores, deserunt eos! Eius, quaerat doloremque ea assumenda quisquam sit aliquam vitae. Adipisci, rem dolorem corporis, placeat magnam quam enim aut ea quos et quasi cum iusto? Maxime suscipit sed accusantium aut eum commodi repellat provident ab explicabo eius amet incidunt rerum quasi voluptatum dicta odio numquam esse adipisci, harum ipsa cumque, labore similique. Dignissimos ex odit praesentium quae corrupti alias tempora, ipsa autem? Voluptatem facere id rem perferendis mollitia dolore voluptate omnis alias atque, dolor neque porro ratione eveniet commodi! Illo a optio iure incidunt culpa pariatur! Dignissimos velit quidem maxime enim laudantium placeat officia laboriosam dicta minima? Eum autem consectetur labore error eaque ut, doloremque ea vel rerum! </p>
+
+    <script>
+        // select the element with the help of id 
+        let mainOb = document.getElementById("main");
+        //applying style on element
+      /*  mainOb.style.color ="Lightblue";
+        mainOb.style.fontSize="50px";
+        mainOb.style.border="2px solid red";
+        mainOb.style.padding="10px";
+        mainOb.style.background="#e2e2e2"; */
+        //applying all this with a button with the help of function
+        //const changeStyle=()=> // arrow function
+        function changeStyle() //nrml function
+        {
+
+        mainOb.style.color ="Lightblue";
+        mainOb.style.fontSize="50px";
+        mainOb.style.border="2px solid red";
+        mainOb.style.padding="10px";
+        //mainOb.style.background="#e2e2e2";
+
+        document.body.style.background="gray";
+        document.body.style.color="black";
+        //by using class
+        mainOb.className=mainOb.className+"red";
+
+
+        };
+        const getStyle=()=> // Arrow function
+        {
+            console.log(mainOb.style.color);
+            console.log(mainOb.style.fontSize);
+            console.log(mainOb.style.border);
+
+
+          // let style= window.getComputedStyle(mainOb);
+          //  console.log(styles.getPropertyValue("color"));
+        }
+
+
+    </script>
+
+</body>
+
+
+</html>

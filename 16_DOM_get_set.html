@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a id="url" class="alert alert-danger" href="https://www.google.com">Google</a>
+    <button onclick="getAtt()">Get</button>
+    <button onclick="setAtt()">Set</button>
+
+
+    <script>
+
+        //creating function getAtt
+        const getAtt=()=>
+        { // get the attribute
+
+           let urlob= document.getElementById("url");
+           let h = urlob.getAttribute("href");
+           console.log(h);
+           console.log(urlob.getAttribute('id'));
+
+           console.log(urlob.getAttribute("class"));
+        };
+
+        function setAtt()
+        { //set the attrbute
+            let urlob = document.getElementById('url');
+            urlob.setAttribute("href","https://www.yahoo.com");
+        };
+
+    </script>
+    
+</body>
+</html>

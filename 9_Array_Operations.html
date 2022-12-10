@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array_Operations</title>
+</head>
+<body>
+    <h1>some common Arrays Operations in JavaScript </h1>
+    <script>
+        //creating arrasy
+        let name =["jhon","Ram","bhupendra"];
+        console.log(name);
+        console.log(name.length);
+        //accessing arrays using index
+        console.log(name[2]);
+        //traversing an arrays accessing all the elements 
+        name.forEach(function(items,indexs){
+            //this is function body and this is annonmous fumction
+            console.log(indexs," --> ",items); 
+        });
+
+        let arr =new Array(1,2,3,4,5);
+        let sum=0;
+        let sum2=0;
+        arr.forEach(function(ele,index){
+            sum = sum+ele; //sum+arr[index]
+            sum2= sum2+index; // it will add index 
+            console.log("what it will print " +arr[index]);
+        })
+        
+        console.log("sum of elements in an arrays "+ sum);
+        console.log("sum2 using index "+sum2);
+
+        //adding elements at last
+        arr.push(199);
+        console.log(arr)
+
+        // deleating an element from the last
+        let result=arr.pop();
+        console.log("poped elemnt from last "+result);
+        console.log("after using pop "+arr);
+
+        //remove elements from begning we use shift function
+        let result2=arr.shift();
+        console.log(result2);
+        console.log(arr);
+
+        //adding element from begning we use unshift
+        arr.unshift("new_value");
+        console.log(arr);
+
+        //finding index of the element
+        let position = arr.indexOf(5);
+        console.log(position);
+
+        //remove element from any positon
+        //using splice
+        //splice(position,n) here n is kitne element apko remove krna h 
+        console.log ("Printing removed elements " +arr.splice(1,1));//remove one element
+        console.log("Printing removed elements "+ arr.splice(2,4));//remove 2 elements
+
+        //coping an array
+        let copy =arr.slice();// and this an shallow copy means it copies refrance of arrays asitis it does not make duplicate
+        // whereas in deep copy make duplicate of refrances in arrays
+        console.log(copy);
+        console.log(arr);
+
+    </script>
+    
+</body>
+</html>

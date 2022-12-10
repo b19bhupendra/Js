@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Work of data types</h1>
+    <script>
+        //understanding datatype Primitive datatype
+        console.log("welcome");
+        var a = 5;
+        let marks =3839.383;
+        console.log(typeof a);
+        console.log(typeof marks);  
+        let name ="peter";
+        console.log(typeof name);
+        //true false
+        let isActive = true;
+        console.log(typeof isActive);
+        var un;
+        console.log(typeof un); //undefined
+        var um =null;
+        console.log(typeof um);
+
+        //referance Type
+        let names=["first", "Second","Third"]
+        console.log(typeof names); //object means associated with heap memory
+
+        let x=23;
+        let y= 23;
+        console.log(x==y); //true means this is stack memory and values are compared
+
+        let xa=[23]
+        let ya=[23]
+        console.log(xa==ya); // this will go in heap memory and  give false bec 
+        //this is an referance type so here in xa of address and ya of address is compared so output is false
+
+        let student1 = {
+            name:"ram",
+            address: "ZX",
+        };
+        console.log(student1);
+        console.log(typeof student1);
+
+        let d= new Date();
+        console.log(d);
+        console.log(typeof d);
+
+    </script>
+</body>
+</html>

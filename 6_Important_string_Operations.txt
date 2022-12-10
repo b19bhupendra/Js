@@ -1,0 +1,19 @@
+1 - How to check equality of two String
+
+
+
+2.- Comparing two String
+
+
+3.- Replace certain words with  another 
+
+
+
+4. - Accessing character  - String[0]
+    1. If we know the index then we can access it with the help of --->  charAt(index)
+
+
+
+
+
+5. - Converting String to array  using split function 

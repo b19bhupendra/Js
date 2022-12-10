@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <h1>Functions in JavaScript</h1>
+    <script>
+        ///creating function
+        function firstfun()
+        {//body open
+            console.log("Hello");
+            console.log("how r u");
+            console.log("What are you doing");
+        } //body close
+         
+        //new function
+        function dosum(a,b) //a and b are formal parameter
+        {
+            //sum of two numbers
+            let c= a+b;
+            return c;
+
+        };
+        //function calling
+        firstfun();
+        let result =dosum(27,19);//here 27,19 are actual parameter
+        console.log("The sum is "+result);
+
+        // Another method to create an function by Arrow function
+
+        const toCelsius=(fahrenheit)=>
+        {
+
+            let result = (5/9)*(fahrenheit-32);
+            return result;
+        };
+
+        let c = toCelsius(102);
+        console.log("Tempreture in degree celsius "+c);
+
+    </script>
+</body>
+</html>
