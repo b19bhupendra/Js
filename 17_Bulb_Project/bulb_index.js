@@ -1,4 +1,4 @@
-document.body.style.backgroundColor="gray";
+
     const turnOn=()=>
     {//bulb on
         let imgOb=document.getElementById('bulb');
@@ -12,7 +12,6 @@ document.body.style.backgroundColor="gray";
         imgOb.setAttribute("src","bulb_OFF.jpg");
 
     };
-
     //toggle
     const toggleBulb=()=>
     {
@@ -35,6 +34,7 @@ document.body.style.backgroundColor="gray";
             buttonob.innerHTML="ON";
 
         }
+        document.body.style.backgroundColor="gray";
         
     };
    

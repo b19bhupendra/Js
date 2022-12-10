@@ -9,5 +9,8 @@ img
 {
     height: 234px;
     width: 180px;
-
+}
+body
+{
+    background-color: darkgrey;
 }
