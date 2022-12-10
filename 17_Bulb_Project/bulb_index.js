@@ -1,4 +1,4 @@
-
+document.body.style.backgroundColor="gray";
     const turnOn=()=>
     {//bulb on
         let imgOb=document.getElementById('bulb');
@@ -35,7 +35,7 @@
             buttonob.innerHTML="ON";
 
         }
-        document.body.style.backgroundColor="gray";
+        
     };
    
    
