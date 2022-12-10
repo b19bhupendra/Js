@@ -4,25 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="bulb_index.js"></script>
+    <style src="bulb_index.css"></style>
     <title>Bulb_ON_OFF</title>
-
-   <style>
-        .bulb-container
-        {
-            margin: 20px;
-            padding: 20px;
-          /*  border: 2px solid blue; */
-            width: 180px;
-        }
-        img
-        {
-            height: 234px;
-            width: 180px;
-        
-        }
-    </style> 
-
-
 </head>
 <body>
     <h1> Ready to ON/OFF bulb control</h1>
@@ -35,50 +19,5 @@
         <img id="bulb" src="bulb_OFF.jpg" alt="" /> 
 
     </div>
-
-    <script>
-
-        const turnOn=()=>
-        {//bulb on
-            let imgOb=document.getElementById('bulb');
-            imgOb.setAttribute("src","bulb_ON.jpg");
-
-        };
-
-        function turnOFF()
-        {
-            let imgOb=document.getElementById('bulb');
-            imgOb.setAttribute("src","bulb_OFF.jpg");
-
-        };
-
-        //toggle
-        const toggleBulb=()=>
-        {
-            let imgOb = document.getElementById('bulb');
-            let srcValue=imgOb.getAttribute("src");
-            //console.log(srcValue);
-
-            let buttonob = document.getElementById('onOFFbutton'); //cahnge the button value on of
-            let buttonText = buttonob.innerHTML;
-
-
-            if(srcValue=='bulb_OFF.jpg')
-            {
-                turnOn();
-                buttonob.innerHTML="OFF"
-            }
-            else
-            {
-                turnOFF();
-                buttonob.innerHTML="ON";
-
-            }
-        };
-       
-        document.body.style.backgroundColor="gray";
-
-    </script>
-
 </body>
 </html>

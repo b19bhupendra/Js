@@ -1,0 +1,13 @@
+.bulb-container
+{
+    margin: 20px;
+    padding: 20px;
+  /*  border: 2px solid blue; */
+    width: 180px;
+}
+img
+{
+    height: 234px;
+    width: 180px;
+
+}
