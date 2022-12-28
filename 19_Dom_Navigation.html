@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+       
+        <h1 id="title">Learning JavaScript and this is a first child</h1>
+        <p id="content">
+            <span>
+                JavaScript is one of the most popular programming language for frontend as well as for backed
+            </span>
+        </p>
+        <h2>Last child</h2>
+    </div>
+        <button onclick="bttn()">useme</button>
+        
+    <script>
+        function bttn()
+        {
+            let containerob=document.getElementById('container');
+        console.log(containerob);
+
+        //finding the child of container
+        console.log(containerob.firstElementChild.nodeName);
+
+        let firstChild=containerob.firstElementChild;
+        console.log(firstChild);
+
+        //last child
+        let lastChild=containerob.lastElementChild;
+        lastChild.style.backgroundColor='lightblue';
+        lastChild.style.color='red';
+        
+        //---------all nodes of childs
+
+        let nodes=containerob.children;
+        for(let n of nodes)
+        {
+            console.log("Child node "+n.nodeName);
+        }
+    
+        //--------all parent nodes
+        let parentNode=containerob.parentNode;
+        console.log("Parrent Name = "+parentNode.nodeName);
+
+        //-----Perivous siblings and next Siblings
+        let titleOb=document.getElementById('title');
+        let next_s=titleOb.nextElementSibling;
+        console.log("Next_sibling "+next_s.nodeName);
+
+        console.log("Next_sibling of sibling "+next_s.nextElementSibling.nodeName);
+
+
+    
+    
+    }
+
+
+    </script>
+</body>
+</html>
