@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom_manipulation</title>
+</head>
+<body>
+    <div id="main">
+
+        <!--insert before-->
+        <h1 id="title">Hello World</h1>
+        
+        <p id="hint">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus nemo laudantium eum nobis odio qui aliquid nesciunt, enim pariatur esse explicabo earum. Animi placeat, vero voluptatum laborum veniam fuga!</p>
+    
+        <!-- divElement -->
+
+    </div>
+    <button onclick="addNode()">Add Note</button>
+    <script>
+        //adding node function
+        function addNode()
+        {
+            console.log("adding node");
+
+            //creating node 
+            let divElement=document.createElement("div");
+            //console.log(divElement);
+
+            //creating a text node 
+
+            let textElement= document.createTextNode("Woow this is magic");
+            let textElement1= document.createTextNode(" creating nodes that to be added in div by using divElement.appendChild(textElement1");
+
+            //adding text node to div element 
+            divElement.appendChild(textElement);
+            divElement.appendChild(textElement1);
+            console.log(divElement);
+
+            let mainElement=document.getElementById('main');
+            mainElement.appendChild(divElement);
+            let titleElement=document.getElementById('title');
+            //titleElement.insertBefore(divElement,titleElement)
+
+            titleElement.innerHTML="<h3>Adding nodes dynamically</h3>"          
+        }
+    </script>
+</body>
+</html>
