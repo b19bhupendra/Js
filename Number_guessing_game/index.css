@@ -1,0 +1,18 @@
+#section2
+{
+    display: none;
+}
+#section3
+{
+    display: none;
+}
+body
+{
+    background-color: whitesmoke;
+}
+.text-danger
+{
+    text-decoration-color: blue;
+    font-weight: 50px;
+    
+}
